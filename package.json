@@ -1,0 +1,14 @@
+{
+  "name": "t-docs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "preview": "serve public -l 8080"
+  },
+  "devDependencies": {
+    "serve": "^14.2.5",
+    "wrangler": "^4.44.0"
+  }
+}

@@ -18,7 +18,7 @@ This repository contains a Cloudflare Worker that manages PDF documents. The pro
 
 ### Clone and dependencies
 ```bash
-git clone <your-fork-url>
+git clone https://github.com/melvinsalas/t-docs.git
 cd t-docs
 npm install
 ```
@@ -31,10 +31,10 @@ Update `wrangler.toml` with your own bucket IDs, D1 database IDs, and KV namespa
 ### 2. Prepare the database
 ```bash
 # create the database (only once)
-wrangler d1 create pdfmeta
+npx wrangler d1 create pdfmeta
 
 # apply migrations locally
-wrangler d1 migrations apply pdfmeta --local
+npx wrangler d1 migrations apply pdfmeta --local
 ```
 
 ### 3. Run the worker
@@ -53,7 +53,7 @@ Open `http://localhost:8080` to interact with the upload form and document list.
 
 Once your configuration matches production resources, deploy with:
 ```bash
-wrangler deploy
+npx wrangler deploy
 ```
 
 ## Contributing
