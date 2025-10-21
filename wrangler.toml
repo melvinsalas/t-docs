@@ -1,0 +1,21 @@
+name = "pdf-manager"
+main = "src/worker.ts"
+compatibility_date = "2024-11-06"
+
+# Bindings
+[[r2_buckets]]
+binding = "R2"       # env.R2
+bucket_name = "pdfs"
+
+[[d1_databases]]
+binding = "DB"                                       # env.DB
+database_name = "pdfmeta"
+database_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+
+# Opcional: KV para reintentos/colas (consistencia eventual)
+[[kv_namespaces]]
+binding = "PENDING"
+id = "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+
+[vars]
+PUBLIC_READ = "true" # si lo pones a true, /download sirve sin auth (simple)

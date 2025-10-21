@@ -1,0 +1,6 @@
+export { uploadDocument } from "./upload"
+export { listDocuments } from "./list"
+export { getDocument } from "./get-doc"
+export { downloadDocument } from "./download"
+export { updateDocument } from "./update-doc"
+export { deleteDocument } from "./delete-doc"

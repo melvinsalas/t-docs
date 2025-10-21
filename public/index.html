@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>PDF Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Subir PDF</h1>
+    <form id="f">
+        <input type="file" name="file" accept="application/pdf" required />
+        <input type="number" name="year" placeholder="A&ntilde;o" />
+        <input type="text" name="tags" placeholder='["factura","clientes"]' />
+        <input type="text" name="description" placeholder="Descripci&oacute;n" />
+        <button>Subir</button>
+    </form>
+
+    <h2>Listado</h2>
+    <div class="filters">
+        <input id="year" type="number" placeholder="A&ntilde;o" />
+        <input id="tag" type="text" placeholder="Tag exacto" />
+        <button id="reload">Buscar</button>
+    </div>
+    <ul id="list"></ul>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
